@@ -14,14 +14,18 @@ pipeline {
       }
 
       stage("Build") {
-        dir("sample-react-app/frontend") {
-          echo "Build"
+        steps {
+            dir("sample-react-app/frontend") {
+                echo "Build"
+            } 
         }
       }
 
       stage("Test") {
-        dir("sample-react-app/frontend") {
-          echo "Test"
+        steps {
+            dir("sample-react-app/frontend") {
+                echo "Test"
+            } 
         }
       }
     }
