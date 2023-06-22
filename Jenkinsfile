@@ -32,9 +32,8 @@ pipeline {
 
       stage("Deploy") {
         steps {
-            deleteDir("/var/www/html")
             dir("sample-react-app/frontend") {
-                sh "cp -rf ./build/* /var/www/html"
+                sh "sudo cp -rf ./build/* /var/www/html"
             } 
         }
       }
