@@ -13,6 +13,14 @@ pipeline {
         }
       }
 
+      stage("InstallPackages") {
+        steps {
+            dir("sample-react-app/frontend") {
+                sh "npm install"
+            } 
+        }
+      }
+
       stage("Build") {
         steps {
             dir("sample-react-app/frontend") {
