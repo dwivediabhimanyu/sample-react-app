@@ -20,8 +20,8 @@ pipeline {
                 sh "npm install"
             } 
         }
-      }npm
-nod
+      }
+      
       stage("Build") {
         steps {
             dir("sample-react-app/frontend") {
