@@ -16,15 +16,16 @@ pipeline {
       stage("Build") {
         steps {
             dir("sample-react-app/frontend") {
-                echo "Build"
+                echo "npm run build"
             } 
         }
       }
 
-      stage("Test") {
+      stage("Deploy") {
         steps {
             dir("sample-react-app/frontend") {
-                echo "Test"
+                sh "rm -rfv /var/www/tutorial"
+                sh "resync -a ./build/ /var/www/tutorial"
             } 
         }
       }
