@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome to TechTalk Jenkins Demo!
+          Welcome to TechTalk on Jenkins!
         </p>
         <p>
           This is an inital code.
