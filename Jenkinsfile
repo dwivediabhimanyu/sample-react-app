@@ -33,7 +33,7 @@ pipeline {
       stage("Deploy") {
         steps {
             dir("sample-react-app/frontend") {
-                sh "sudo cp -rf ./build/* /var/www/html"
+                sh "cp -rf ./build/* /var/www/html"
             } 
         }
       }
