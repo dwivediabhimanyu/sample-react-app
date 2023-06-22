@@ -33,7 +33,6 @@ pipeline {
       stage("Deploy") {
         steps {
             dir("sample-react-app/frontend") {
-                sh "rm -rfv /var/www/brightly"
                 sh "rsync -a ./build/ /var/www/brightly"
             } 
         }
