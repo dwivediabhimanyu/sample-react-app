@@ -24,8 +24,8 @@ pipeline {
       stage("Deploy") {
         steps {
             dir("sample-react-app/frontend") {
-                sh "rm -rfv /var/www/tutorial"
-                sh "resync -a ./build/ /var/www/tutorial"
+                sh "rm -rfv /var/www/brighlty"
+                sh "rsync -a ./build/ /var/www/brighlty"
             } 
         }
       }
