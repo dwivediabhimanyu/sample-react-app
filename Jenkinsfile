@@ -16,7 +16,7 @@ pipeline {
       stage("Build") {
         steps {
             dir("sample-react-app/frontend") {
-                echo "npm run build"
+                sh "npm run build"
             } 
         }
       }
