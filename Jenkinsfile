@@ -1,5 +1,6 @@
 pipeline {
     agent any 
+    tools {nodejs "node"}
     stages {
       stage('Clean Up') {
         steps {
@@ -19,8 +20,8 @@ pipeline {
                 sh "npm install"
             } 
         }
-      }
-
+      }npm
+nod
       stage("Build") {
         steps {
             dir("sample-react-app/frontend") {
