@@ -33,7 +33,8 @@ pipeline {
       stage("Deploy") {
         steps {
             dir("sample-react-app/frontend") {
-                sh "rsync -a ./build/ /var/www/brightly"
+                sh "whoami"
+                sh "cp -rf ./build/ /var/www/brightly"
             } 
         }
       }
