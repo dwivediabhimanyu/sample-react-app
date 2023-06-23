@@ -12,6 +12,9 @@ function App() {
         <p>
           This is an inital code.
         </p>
+        <p>
+          Brighlty Software
+        </p>
       </header>
     </div>
   );
