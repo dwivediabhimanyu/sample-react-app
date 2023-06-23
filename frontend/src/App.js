@@ -10,7 +10,7 @@ function App() {
           Welcome to Tech Talk on Jenkins!
         </p>
         <p>
-          This is an inital code.
+          This is my second release.
         </p>
         <p>
           Brighlty Software
