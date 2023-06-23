@@ -1,6 +1,6 @@
 pipeline {
     agent any 
-    tools {nodejs "node"}
+    tools  { nodejs "node" }
     stages {
       stage('Clean Up') {
         steps {
@@ -8,6 +8,7 @@ pipeline {
           deleteDir()
         }
       }
+
       stage("Checkout") {
         steps {
           sh "git clone https://github.com/dwivediabhimanyu/sample-react-app.git"
